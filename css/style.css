@@ -13,11 +13,6 @@ html, body {
     flex-direction: column;
 }
 
-body {
-    background-color: #aaa;
-}
-
-
 main {
     flex: 1;
 }
