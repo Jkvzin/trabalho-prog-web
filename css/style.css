@@ -1,0 +1,442 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #aaa;
+}
+
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #10222E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-I {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.form-I {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+fieldset {
+    flex: 1 1 100%; /* Ocupa toda a linha */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+fieldset legend {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 100%;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+a.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a.voltar:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: #10222E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 120px;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 25px;
+    color: white;
+    margin: 40px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+    flex-direction: row;
+}
+
+/*Menu*/
+nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-right: 3px solid;
+    height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    margin-bottom: 15px;
+}
+
+nav a, .generos a {
+    color: #0056B3;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 3s;
+}
+
+nav a:hover, .generos a:hover {
+    text-decoration: none;
+}
+
+nav a:visited, .generos a:visited {
+    color: #003366;
+    text-decoration: none;
+}
+
+.container-II {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 20px;
+    text-align: center;     
+}
+
+.container-II img {
+    max-width: 300px; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.container-II p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 100px;
+    line-height: 30px;
+}
+
+.container-III {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-III h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%; 
+    border-radius: 8px;
+    flex-direction: row;
+}
+
+.perfil img{
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info{
+    width: 100%;
+    text-align: left;
+}
+
+.info p{
+   width: 100%;
+   margin: 30px; 
+   font-size: 16px; 
+}
+
+
+
+/*Contatos*/
+.form-II {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-group-II {
+    flex: 1 1 calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group-II label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group-II input, 
+.form-group-II textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.assunto{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#assunto {
+    flex: 1;
+}
+
+.botoes-II {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    margin-top: 20px;
+}
+
+
+/*Filmes*/
+.generos {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.linkAcao, .linkTerror {
+    padding: 15px;
+    border-right: 2px solid;
+    border-color: black;
+}
+
+.linkComedia {
+    padding: 15px;
+}
+
+.filmes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.exibirFilmes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.capaFilme-I {
+    width: 125px;
+}
+
+/*Página de cada Filme*/
+
+.filme-capa2{
+    max-width: 100%;
+    height: auto;
+}
+
+.container-IV {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    text-align: left;
+    height: 100%; 
+    overflow-y: auto; 
+}
+
+.info p{
+    margin: auto;
+    line-height: 1.5;
+}
+
+.titulo {
+    margin-top: 20px;
+}
+
+/*Trailer*/
+.trailer{
+    padding: 20px;
+}
+.trailer h4 {
+    margin-bottom: 7px;
+}
+
+/*Trilha Sonora*/
+.trilha {
+    padding: 20px;
+    width: 100%;
+}
+
+.trilha h4 {
+    margin-bottom: 7px;
+}
+
+.voltar-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.voltar-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.voltar-container a:hover {
+    text-decoration: underline;
+}
