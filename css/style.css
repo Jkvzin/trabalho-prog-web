@@ -365,7 +365,7 @@ nav a:visited, .generos a:visited {
 }
 
 .capaFilme-I {
-    width: 125px;
+    width: 150px;
 }
 
 
@@ -466,6 +466,10 @@ nav a:visited, .generos a:visited {
         height: 80px;
     }
 
+    main {
+        flex-direction: column;
+    }
+
     header h1 {
         font-size: 18px;
         margin: 20px; 
@@ -473,17 +477,28 @@ nav a:visited, .generos a:visited {
 
     nav {
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         border-right: none;
-        padding: 15px;
+        border-bottom: 3px solid #ccc;
+        padding: 10px;
+        width: 100%;
+        height: auto;
     }
 
-    nav a {
-        font-size: 14px;
-        margin: 10px;
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
     }
 
-    /* Ajustar containers */
+    nav li {
+        margin: 0;
+    }
+
     .container-I, .container-II, .container-III, .container-IV {
         width: 100%;
         padding: 15px;
@@ -494,15 +509,28 @@ nav a:visited, .generos a:visited {
     }
 
     
-    .form-I, .form-II {
+    .form-I {
         flex-direction: column;
         gap: 10px;
     }
 
-    .form-group, .form-group-II {
+    .form-group {
         flex: 1 1 100%;
     }
 
+    .form-II {
+        display: flex;
+        flex-wrap: 0;
+        gap: 15px;
+    }
+    
+    .form-group-II {
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
     fieldset {
         margin-top: 15px;
         padding: 10px;
@@ -516,15 +544,6 @@ nav a:visited, .generos a:visited {
     .filmes {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .capaFilme-I {
-        width: 100px;
-    }
-
-    .imagem img {
-        max-width: 100%;
-        height: auto;
     }
 
     .info {
