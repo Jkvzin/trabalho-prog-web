@@ -1,9 +1,21 @@
-/* Reset Básico */
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos globais */
+h1, h2, h3  {
+    font-family:  serif;
+}
+
+p, a, label, input, textarea, select, button {
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -13,8 +25,17 @@ html, body {
     flex-direction: column;
 }
 
+body {
+    background-color: white;
+}
+
 main {
     flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    flex-direction: row;
 }
 
 footer {
@@ -84,7 +105,7 @@ h2 {
 
 
 fieldset {
-    flex: 1 1 100%; /* Ocupa toda a linha */
+    flex: 1 1 100%;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 4px;
@@ -135,6 +156,7 @@ a.voltar:hover {
 }
 
 
+/*header*/
 header {
     background-color: #10222E;
     width: 100%;
@@ -145,6 +167,7 @@ header {
 header img {
     height: 120px;
     flex-shrink: 0;
+    padding-left: 20px;
 }
 
 header h1 {
@@ -154,14 +177,9 @@ header h1 {
     text-align: center;
 }
 
-main {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    background-color: #white;
-    flex-direction: row;
-}
+
+
+
 
 /*Menu*/
 nav {
@@ -197,6 +215,8 @@ nav a:visited, .generos a:visited {
     text-decoration: none;
 }
 
+
+
 .container-II {
     flex: 1;
     display: flex;
@@ -208,8 +228,6 @@ nav a:visited, .generos a:visited {
 }
 
 .container-II img {
-    max-width: 300px; 
-    height: auto;
     margin-bottom: 20px; 
 }
 
@@ -350,8 +368,8 @@ nav a:visited, .generos a:visited {
     width: 125px;
 }
 
-/*Página de cada Filme*/
 
+/*Página de cada Filme*/
 .filme-capa2{
     max-width: 100%;
     height: auto;
@@ -434,4 +452,91 @@ nav a:visited, .generos a:visited {
 
 .voltar-container a:hover {
     text-decoration: underline;
+}
+
+
+/* Estilos para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        background-color: #f5f5f5;
+    }
+
+    header img {
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        margin: 20px; 
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-right: none;
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    /* Ajustar containers */
+    .container-I, .container-II, .container-III, .container-IV {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    
+    .form-I, .form-II {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group, .form-group-II {
+        flex: 1 1 100%;
+    }
+
+    fieldset {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+
+    .filmes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .capaFilme-I {
+        width: 100px;
+    }
+
+    .imagem img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+    .trailer, .trilha {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
