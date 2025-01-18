@@ -499,6 +499,10 @@ nav a:visited, .generos a:visited {
         margin: 0;
     }
 
+    nav a {
+        font-size: 12px;
+    }
+
     .container-I, .container-II, .container-III, .container-IV {
         width: 100%;
         padding: 15px;
