@@ -167,7 +167,7 @@ header {
 header img {
     height: 120px;
     flex-shrink: 0;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 header h1 {
@@ -428,10 +428,15 @@ nav a:visited, .generos a:visited {
     margin-bottom: 7px;
 }
 
+.trailer iframe {
+    width: 42.66vw;
+    height: 24vw;
+}
+
 /*Trilha Sonora*/
 .trilha {
     padding: 20px;
-    width: 100%;
+    width: 90%;
 }
 
 .trilha h4 {
@@ -454,7 +459,7 @@ nav a:visited, .generos a:visited {
 }
 
 
-/* Estilos para telas menores que 768px (dispositivos móveis) */
+/*Versão para mobile*/
 @media (max-width: 768px) {
     body {
         flex-direction: column;
@@ -543,6 +548,11 @@ nav a:visited, .generos a:visited {
         width: 100%;
     }
 
+    .capaFilme-I {
+        width: 80%;
+        height: auto;
+    }
+
     .filmes {
         flex-direction: column;
         gap: 20px;
@@ -559,6 +569,15 @@ nav a:visited, .generos a:visited {
 
     .trailer, .trilha {
         padding: 10px;
+    }
+
+    .trailer iframe {
+        width: 62.22vw;
+        height: 35vw;
+    }
+
+    .trilha {
+        width: 100%;
     }
 
     footer {
